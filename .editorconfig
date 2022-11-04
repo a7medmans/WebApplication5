@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# MsgPack003: Use MessagePackObjectAttribute
+dotnet_diagnostic.MsgPack003.severity = error
