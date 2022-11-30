@@ -161,7 +161,7 @@ namespace WebApplication5.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
                     var defaultrole = _roleManager.FindByNameAsync("Student").Result;
-                       IdentityResult roleresult = await _userManager.AddToRoleAsync(user, defaultrole.Name);
+                        IdentityResult roleresult = await _userManager.AddToRoleAsync(user, defaultrole.Name);
                     
                     //await _userManager.AddToRolesAsync(user,"Admin");
 
